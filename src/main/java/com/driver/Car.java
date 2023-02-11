@@ -11,15 +11,23 @@ public class Car extends Vehicle {
 
     public Car(String name, int wheels, int doors, int gears, boolean isManual, String type, int seats) {
         //Hint: Car extends Vehicle
+        super(name);
+        this.wheels = wheels;
+        this.type = type;
+        this.doors = doors;
+        this.isManual = isManual;
+        this.currentGear = gears;
+        this.seats = seats;
     }
 
     public void changeGear(int newGear){
-
+        this.newGear = newGear;
         System.out.println("changeGear method called - The gear is changed to: " + currentGear);
     }
 
     public void changeSpeed(int newSpeed, int newDirection){
-
+        this.newSpeed = newDirection;
+        this.currentDirection = newDirection;
         System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed + ", and the direction is changed to: " + newDirection + " degrees");
     }
 }
