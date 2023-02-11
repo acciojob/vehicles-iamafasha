@@ -54,4 +54,8 @@ public class Car extends Vehicle {
      public int getCurrentGear(){
         return this.currentGear;
      }
+
+     public String getType(){
+        return this.type;
+     }
 }
